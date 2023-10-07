@@ -1,4 +1,5 @@
-﻿using Datacenter.Domain.ValueObjects;
+﻿using Datacenter.Domain.Primitives;
+using Datacenter.Domain.ValueObjects;
 
 namespace Datacenter.Domain.Entities;
 

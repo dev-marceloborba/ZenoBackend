@@ -1,6 +1,8 @@
-﻿namespace Datacenter.Domain.ValueObjects;
+﻿using Datacenter.Domain.Primitives;
 
-public record RackSlot(int InitialPosition, int FinalPosition)
+namespace Datacenter.Domain.ValueObjects;
+
+public record RackSlot(int InitialPosition, int FinalPosition) : ValueObject
 {
     public int GetSize() => FinalPosition - InitialPosition;
 }

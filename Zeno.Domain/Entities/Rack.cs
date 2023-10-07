@@ -1,8 +1,9 @@
 ﻿using Datacenter.Domain.Exceptions;
+using Datacenter.Domain.Primitives;
 
 namespace Datacenter.Domain.Entities;
 
-public class Rack
+public sealed class Rack : Entity
 {
     public string Name { get; private set; }
     public double PowerCapacity { get; private set; }
@@ -10,7 +11,8 @@ public class Rack
     public string Localization { get; private set; }
     public List<RackEquipment> RackEquipments { get; private set; }
 
-    public Rack(string name, string localization, int capacity, double powerCapacity)
+    public Rack(Guid id, string name, string localization, int capacity, double powerCapacity)
+        : base(id)
     {
         Name = name;
         Localization = localization;
