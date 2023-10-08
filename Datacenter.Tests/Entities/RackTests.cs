@@ -125,4 +125,15 @@ public class RackTests
         var exception = Record.Exception(check);
         Assert.IsType<RackUnavailableSpaceDomainException>(exception);
     }
+
+    [Fact]
+    public void Should_Return_Exception_When_Adding_A_Equipment_With_Wrong_Positions()
+    {
+        var rack = new Rack(Guid.NewGuid(), "Rack1", "A1-D1", 42, 1000.00);
+        
+        Action check = () => new Server(Guid.NewGuid(), "Server 1", new RackSlot(2, 1), 500);
+        var exception = Record.Exception(check);
+
+        Assert.IsType<InvalidRackSlotDomainException>(exception);
+    }
 }
