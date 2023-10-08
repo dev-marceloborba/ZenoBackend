@@ -17,4 +17,8 @@
     <Folder Include="Queries\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Zeno.Domain\Datacenter.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
