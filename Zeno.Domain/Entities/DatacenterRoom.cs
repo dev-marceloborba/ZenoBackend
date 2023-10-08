@@ -3,7 +3,7 @@ using Datacenter.Domain.Primitives;
 
 namespace Datacenter.Domain.Entities;
 
-public sealed class DatacenterRoom : Entity
+public sealed class DatacenterRoom : AggregateRoot
 {
     public string Name { get; private set; }
     public int MaxRacks { get; private set; }
