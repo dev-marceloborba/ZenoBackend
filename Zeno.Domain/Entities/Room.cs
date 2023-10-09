@@ -3,13 +3,13 @@ using Datacenter.Domain.Primitives;
 
 namespace Datacenter.Domain.Entities;
 
-public sealed class DatacenterRoom : AggregateRoot
+public sealed class Room : AggregateRoot
 {
     public string Name { get; private set; }
     public int MaxRacks { get; private set; }
     public List<Rack> Racks { get; private set; }
 
-    public DatacenterRoom(Guid id, string name, int maxRacks)
+    public Room(Guid id, string name, int maxRacks)
         : base(id)
     {
         Name = name;

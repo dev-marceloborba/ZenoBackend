@@ -11,10 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Handlers\" />
-    <Folder Include="Commands\" />
     <Folder Include="Validations\" />
-    <Folder Include="Queries\" />
+    <Folder Include="Rooms\Queries\" />
   </ItemGroup>
 
   <ItemGroup>

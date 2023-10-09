@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zeno.Datacenter.Application\Datacenter.Application.csproj" />
+    <ProjectReference Include="..\Zeno.Datacenter.Infrastructure\Datacenter.Infrastructure.csproj" />
+    <ProjectReference Include="..\Zeno.Domain\Datacenter.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+</Project>

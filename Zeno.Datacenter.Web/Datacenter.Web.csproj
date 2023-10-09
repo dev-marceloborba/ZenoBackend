@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Zeno.Domain\Datacenter.Domain.csproj" />
+    <ProjectReference Include="..\Zeno.Datacenter.Application\Datacenter.Application.csproj" />
   </ItemGroup>
 
 </Project>

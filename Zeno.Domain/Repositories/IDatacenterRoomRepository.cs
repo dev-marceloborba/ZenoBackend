@@ -2,9 +2,9 @@
 
 namespace Datacenter.Domain.Repositories;
 
-public interface IDatacenterRoomRepository
+public interface IRoomRepository
 {
-    Task<IEnumerable<DatacenterRoom>> GetAllDatacenterRoomAsync(CancellationToken cancellationToken = default);
-    Task<DatacenterRoom?> GetByIdDatacenterRoomAsync(Guid id, CancellationToken cancellationToken = default);
-    void AddDatacenterRoom(DatacenterRoom datacenterRoom);
+    Task<IEnumerable<Room>> GetAllDatacenterRoomAsync(CancellationToken cancellationToken = default);
+    Task<Room?> GetByIdDatacenterRoomAsync(Guid id, CancellationToken cancellationToken = default);
+    void Add(Room room);
 }
