@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c54dd319-c020-4c64-bbd6-9d0677183885</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Datacenter.Persistence\Datacenter.Persistence.csproj" />
+    <ProjectReference Include="..\Datacenter.Presentation\Datacenter.Presentation.csproj" />
+    <ProjectReference Include="..\Zeno.Datacenter.Application\Datacenter.Application.csproj" />
+    <ProjectReference Include="..\Zeno.Datacenter.Infrastructure\Datacenter.Infrastructure.csproj" />
+    <ProjectReference Include="..\Zeno.Domain\Datacenter.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
