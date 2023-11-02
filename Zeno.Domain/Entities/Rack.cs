@@ -59,7 +59,6 @@ public sealed class Rack : Entity
     }
 
     public void RemoveEquipment(RackEquipment equipment) => RackEquipments.Remove(equipment);
-
     public int GetAvailableSpace() => Capacity - RackEquipments.Sum(re => re.RackSlot.GetSize() + 1);
     public double GetAvailablePower() => PowerCapacity - RackEquipments.Sum(re => re.Power);
 }

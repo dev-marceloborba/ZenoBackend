@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Zeno.Domain\Datacenter.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
